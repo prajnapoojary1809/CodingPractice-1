@@ -1,21 +1,28 @@
 package Problem14;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FibonacciSeries {
     public static void main(String[] args) {
-        int sum = 0;
-        fibonacciSeries(sum);
+        int n=10;
+        List<Integer> list=fibonacciSeries(n);
+        System.out.println("Fibonacci Series:"+list);
+
     }
 
-    public static void fibonacciSeries(int sum) {
-        int n = 10;
+    public static List<Integer> fibonacciSeries(int n) {
+        List<Integer> fibonacciList=new ArrayList<>();
         int a1 = 0;
         int a2 = 1;
-        System.out.println("Fibonacci Series:"+"\n"+a1+"\n"+a2);
+            fibonacciList.add(a1);
+            fibonacciList.add(a2);
         for (int i = 0; i < n; i++) {
-            sum = a1 + a2;
+            int sum = a1 + a2;
+            fibonacciList.add(sum);
             a1 = a2;
             a2 = sum;
-            System.out.println(sum);
         }
+        return fibonacciList;
     }
 }

@@ -32,7 +32,8 @@ public class AddingTwoFractions {
         }return "Division not possible";
     }
         public static int lCM ( int den1, int den2){
-            return (den1 * den2) / findGCD(den1, den2);
+
+        return (den1 * den2) / findGCD(den1, den2);
         }
 
         public static int findGCD ( int den1, int den2){
