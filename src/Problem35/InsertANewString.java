@@ -1,6 +1,6 @@
 package Problem35;
 
-public class InsertaNewString {
+public class InsertANewString {
     public static void main(String[] args) {
         String original = "HelloWorld";
         String toInsert = " Beautiful ";

@@ -1,6 +1,6 @@
 package Problem9;
 
-public class PowerOfaNumber {
+public class PowerOfANumber {
         public static void main(String[] args) {
             int base = 3;
             int exponent = 4;
